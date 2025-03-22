@@ -1,0 +1,18 @@
+<table width="100%" style="color:var(--accent);border-width:0px">
+  <tbody>
+    <tr>
+      <td width="50%" style="text-align:left;border-width:0px;border-color:var(--accent);">
+        {{ $format_str := "2 January 2006, 15:00"}}
+        {{ $event_date := time.AsTime .Page.Params.event_date }}
+        <strong style="font-size:20px;">Когда:</strong>
+        <strong style="font-size:20px;color:var(--foreground);">{{ $event_date | time.Format $format_str  }}</strong>
+      </td>
+      <td width="50%" style="text-align:left;border-width:0px;border-color:var(--accent);">
+        {{ with .Page.Params.event_place }}
+            <strong style="font-size:20px;">Где:</strong>
+            <strong style="font-size:20px;color:var(--foreground);">{{ .name | markdownify}}</strong>
+        {{ end }}
+      </td>
+    </tr>
+  </tbody>
+</table>
