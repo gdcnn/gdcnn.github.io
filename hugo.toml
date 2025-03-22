@@ -1,4 +1,4 @@
-baseURL = 'https://gorkydev.community/'
+baseURL = 'https://mobile.gorkydev.ru/'
 languageCode = 'ru-RU'
 defaultContentLanguage = "ru"
 title = 'Gorky Developers Community :: Mobile'
@@ -73,7 +73,7 @@ languageName = "Russian"
 title = "Gorky Developers Community :: Mobile"
 
 [languages.ru.params]
-subtitle = "Сайт сообщества разработчиков Нижнего Новгорода"
+subtitle = "Сайт сообщества мобильных разработчиков Нижнего Новгорода"
 owner = ""
 keywords = ""
 copyright = ""
