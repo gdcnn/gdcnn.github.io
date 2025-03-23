@@ -1,0 +1,78 @@
+.schedule-base {
+	width:100%;
+}
+
+.schedule-row {
+	display:flex;
+	flex-direction:row;
+}
+
+.schedule-row-divider {
+	display:flex;
+	flex-direction:row;
+	border:solid 3px;
+	border-color:var(--accent);
+}
+
+.schedule-row-divider-content {
+	width:90%;
+	text-align:center;
+	display:block;
+	align-content:center;
+	font-size:20px;
+	font-weight:bold;
+}
+
+.schedule-row-divider-time {
+	width:10%;
+	display:block;
+	align-content:center;
+	text-align:center;
+	box-sizing:border-box;
+	padding:10px;
+	border-left-style:solid;
+	border-left-width:3px;
+	border-color:var(--accent);
+	min-width:70px;
+	font-weight:bold;
+}
+
+.schedule-row-time {
+	width:10%;
+	display:block;
+	align-content:center;
+	text-align:center;
+	box-sizing:border-box;
+	padding:10px;
+	min-width:70px;
+	font-weight:bold;
+}
+
+.schedule-row-image-block {
+	width:30%;
+}
+
+.schedule-row-image-content {
+	border:none;
+}
+
+.schedule-row-speaker-block {
+	flex:1;
+}
+
+.schedule-row-image-block-mobile {
+	display:flex;
+	justify-content:center;
+}
+
+@media (max-width: 768px) {
+	.schedule-desktop {
+		display:none;
+	}
+}
+
+@media (min-width: 769px) {
+  .schedule-mobile {
+    display: none;
+  }
+}

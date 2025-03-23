@@ -1,31 +1,29 @@
-{{ "## Расписание мероприятия" | markdownify }} 
-<table style="border:10px;">
-  <tbody>
-    {{ range $k, $v := .Page.Params.schedule }}
-    <tr>
-      {{ if .divider }}
-        <td colspan="2" style='text-align:center;font-size:20px;border-color:var(--accent);'>
-          <strong>{{ .divider | markdownify }}</strong>
-        </td>
-        <td width="10%" style="text-align:center;border-color:var(--accent);">
-          <strong>{{ .time }}</strong>
-        </td>
-      {{ else }}
-        {{ $image := resources.Get .speaker_image }}
-      
-        {{ with $image }}
-          <td style="border:0px;" width='30%'>
-            <img src="{{ .RelPermalink }}" alt="Спикер" width=600 height="auto" style="border:0px;" />
-          </td>
-        {{ end }}
-        
-        <td style="border:0px;" width='60%'>{{ .speaker_info | markdownify }}</td>
-        <td style="border:0px;text-align:center;" width='10%'>
-          <strong>{{ .time }}</strong>
-        </td>
-
-      {{ end }}
-    </tr>
+{{ "## Расписание мероприятия" | markdownify }}
+<div class="schedule-base">
+  {{ range $k, $v := .Page.Params.schedule }}
+    {{ if .divider }}
+      <div class="schedule-row-divider">
+        <div class="schedule-row-divider-content">
+          {{ .divider | markdownify }}
+        </div>
+        <div class="schedule-row-divider-time">
+          {{ .time }}
+        </div>
+      </div>
+    {{ else }}
+      {{ $image := resources.Get .speaker_image }}
+      <div class="schedule-row">
+        <div class="schedule-row-image-block schedule-desktop">
+          <img class="schedule-row-image-content" src="{{ $image.RelPermalink }}" alt="Фото спикера" width=200 height="auto" />
+        </div>
+        <div class="schedule-row-speaker-block">
+          <div class="schedule-row-image-block-mobile schedule-mobile">
+            <img src="{{ $image.RelPermalink }}" alt="Фото спикера" width=200 height="auto" class="schedule-row-image-content" />
+          </div>
+          {{ .speaker_info | markdownify }}
+        </div>
+        <div class="schedule-row-time">{{ .time }}</div>
+      </div>
     {{ end }}
-  </tbody>
-</table>
+  {{ end }}
+</div>
