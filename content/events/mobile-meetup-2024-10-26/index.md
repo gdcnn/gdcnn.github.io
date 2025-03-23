@@ -9,6 +9,7 @@ event_place:
    name: '[Стартап Хаб НН](https://yandex.ru/maps/-/CHFHj6Z7)'
 sign_up_form:
    enabled: true
+   name: meetup-24-10-26-register
    id: 1TMyronWfn_or-aTwGpKkYyk-E9JCmuNBVqIE_fKnqxM
    last_name_field: entry.1551096861
    first_name_field: entry.133372487

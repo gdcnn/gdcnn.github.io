@@ -1,7 +1,7 @@
 {{ "## Форма регистрации" | markdownify }}
 {{ with .Page.Params.sign_up_form }}
   {{ if .enabled }}
-  <form action="https://docs.google.com/forms/d/{{ .id }}/formResponse" method="GET" target="_blank">
+  <form action="https://docs.google.com/forms/d/{{ .id }}/formResponse" method="GET" target="_blank" name="{{ .name }}">
     <fieldset>
       <label for="{{ .last_name_field }}">Фамилия:</label>
       <input type="text" id="{{ .last_name_field }}" name="{{ .last_name_field }}" required>
