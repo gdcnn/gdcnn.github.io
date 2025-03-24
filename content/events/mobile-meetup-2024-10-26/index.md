@@ -8,7 +8,7 @@ event_date: 2024-10-26T13:00:00+03:00
 event_place:
    name: '[Стартап Хаб НН](https://yandex.ru/maps/-/CHFHj6Z7)'
 sign_up_form:
-   enabled: true
+   enabled: false
    name: meetup-24-10-26-register
    id: 1TMyronWfn_or-aTwGpKkYyk-E9JCmuNBVqIE_fKnqxM
    last_name_field: entry.1551096861
