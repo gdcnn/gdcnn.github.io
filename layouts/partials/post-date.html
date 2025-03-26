@@ -1,6 +1,7 @@
 {{ .Scratch.Set "date" .Date }}
-{{ if .Params.event_date }}
-  {{ .Scratch.Set "date" .Params.event_date }}
+{{ if .Params.event_date.start }}
+  {{ $start_date := .Params.event_date.start }}
+  {{ .Scratch.Set "date" $start_date }}
 {{ end }}
 
 {{- $date := .Scratch.Get "date" -}}

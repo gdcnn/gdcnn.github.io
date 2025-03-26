@@ -4,7 +4,9 @@ description: 'Первый мобильный митап в Нижнем Нов�
 draft: false
 publishDate: 2024-10-28T00:00:00+03:00
 
-event_date: 2024-10-26T13:00:00+03:00
+event_date:
+  start: 2024-10-26T13:00:00+03:00
+  end: 2024-10-26T17:00:00+03:00
 event_place:
    name: '[Стартап Хаб НН](https://yandex.ru/maps/-/CHFHj6Z7)'
 sign_up_form:
