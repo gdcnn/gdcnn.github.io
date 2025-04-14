@@ -7,7 +7,7 @@ event_date:
   start: 2025-04-12T12:00:00+03:00
   end: 2025-04-12T17:00:00+03:00
 event_place:
-   name: '[Стартап Хаб НН](https://yandex.ru/maps/-/CHFHj6Z7)'
+   name: '[MTS StartUp Hub](https://yandex.ru/maps/-/CHFHj6Z7)'
 
 schedule:
   - divider: Сбор гостей
