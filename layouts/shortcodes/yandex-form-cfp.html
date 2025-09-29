@@ -1,1 +1,2 @@
-{{ partial "yandex-form-cfp" . }}
+{{ $id := .Get "id" | default "" }}
+{{ partial "yandex-form-cfp" (dict "id" $id) }}

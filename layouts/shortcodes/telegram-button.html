@@ -1,1 +1,3 @@
-{{ partial "telegram-button" . }}
+{{ $link := .Get "link" | default "" }}
+{{ $text := .Get "text" | default "" }}
+{{ partial "telegram-button" (dict "link" $link "text" $text) }}

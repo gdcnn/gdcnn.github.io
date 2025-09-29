@@ -1,1 +1,2 @@
-<script src="https://forms.yandex.ru/_static/embed.js"></script><iframe src="https://forms.yandex.ru/cloud/681a36b302848f0fc811c8c1?iframe=1" frameborder="0" name="ya-form-681a36b302848f0fc811c8c1" width="100%"></iframe>
+{{ $id := .id | default "681a36b302848f0fc811c8c1" }}
+<script src="https://forms.yandex.ru/_static/embed.js"></script><iframe src="https://forms.yandex.ru/cloud/{{$id}}?iframe=1" frameborder="0" name="ya-form-{{$id}}" width="100%"></iframe>
