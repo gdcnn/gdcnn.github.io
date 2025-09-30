@@ -1,8 +1,8 @@
 {{ "## Форма регистрации" | markdownify }}
 {{ with .Page.Params.sign_up_form }}
   {{ if .enabled }}
-  	{{ partial "sign-up-form" . }}
+    {{ partial "yandex-sign-up.html" . }}
   {{ else }}
-  	Регистрация на мероприятие завершена.
+    Регистрация на мероприятие завершена.
   {{ end }}
 {{ end }}

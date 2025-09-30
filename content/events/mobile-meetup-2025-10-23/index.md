@@ -45,7 +45,7 @@ schedule:
   - divider: Afterparty
     time: '22:00 - 00:00'
 sign_up_form:
-  enabled: false
+  enabled: true
   name: meetup-2025-04-12-register
   id: 1tlcctnRaUx1Pvr4_l83X3nKwjyHPrnnCaHxnVXj3wNA
   last_name_field: entry.206650844
