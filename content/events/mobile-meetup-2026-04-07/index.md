@@ -45,7 +45,7 @@ schedule:
   - divider: Afterparty
     time: '21:00 - 23:00'
 sign_up_form:
-  enabled: true
+  enabled: false
 
 ---
 
